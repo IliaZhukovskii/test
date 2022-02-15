@@ -7,7 +7,6 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Test</title>
      <link rel="stylesheet" href="css/style.css">
-     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
      <style>
           @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@500&family=Roboto:wght@500&family=Roboto:wght@500&display=swap');
@@ -29,7 +28,89 @@
           </div>
      </header>
 
-
+     <section class="product">
+          <div class="container">
+               <div class="product-wrap">
+                    <div class="product-img">
+                         <img src="img/product/product.png" alt="product" class="product-img__img">
+                    </div>
+                    <div class="product-info">
+                         <h1 class="product-title">Пижама для девочек</h1>
+                         <div class="product-articl">Арт. 02765/46</div>
+                         <div class="product-comment">
+                              <div class="product-comment__text">Отзывы</div>
+                              <div class="product-comment__stars">
+                                   <img class="product-star" src="img/product/star-black.svg" alt="icon: star">
+                                   <img class="product-star" src="img/product/star-black.svg" alt="icon: star">
+                                   <img class="product-star" src="img/product/star-black.svg" alt="icon: star">
+                                   <img class="product-star" src="img/product/star-black.svg" alt="icon: star">
+                                   <img class="product-star" src="img/product/star-white.svg" alt="icon: star">
+                              </div>
+                              <div class="product-comment__text">14 отзывов</div>
+                         </div>
+                         <div class="product-price">
+                              <div class="product-price__wrap">
+                                   <div class="product-price__actual">800 ₽</div>
+                                   <div class="product-price__old">1 500 ₽</div>
+                                   <a href="#" class="product-price__open"><img src="img/product/open.svg"
+                                             alt="icon: open"></a>
+                              </div>
+                              <a href="#" class="product-price__discount">скидка -36%</a>
+                              <a href="#" class="product-price__discount">акция -20%</a>
+                         </div>
+                         <div class="product-size">
+                              <select class="product-size__choice" name="select">
+                                   <option disabled selected style="display: none" ;>Выбрать размер</option>
+                                   <option value="12">XS</option>
+                                   <option value="14">S</option>
+                                   <option value="15">M</option>
+                                   <option value="16">L</option>
+                                   <option value="16">XL</option>
+                              </select>
+                              <a href="#" class="product-size__define">Определить размер</a>
+                         </div>
+                         <div class="product-basket">
+                              <div class="product-basket__count">
+                                   <button class="product-basket__count-add" id="product-basket__count-add">+</button>
+                                   <div class="product-basket__count-count" id="product-basket__count-count">1</div>
+                                   <button class="product-basket__count-minus"
+                                        id="product-basket__count-minus">-</button>
+                              </div>
+                              <button class="product-basket__add">Добавить в корзину</button>
+                              <button class="product-basket__like">
+                                   <svg class="like" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11.9 7.0948C10.6998 1.47892 1.40881 5.90389 5.76037 11.6018C10.1119 17.2996 12.4 19.4908 12.4 19.4908"
+                                             stroke="white" />
+                                        <path d="M11.8941 7.0948C13.0944 1.47892 22.7304 5.90389 18.3789 11.6018C14.0273 17.2996 11.7 19.5 11.7 19.5"
+                                             stroke="white" />
+                                        <path d="M11.391 6.70752L12.4043 6.70757L12.3834 7.24079H11.391V6.70752Z"
+                                             fill="white" />
+                                   </svg>
+                              </button>
+                              <a href="#" class="product-basket__buy">Купить в 1 клик</a>
+                         </div>
+                         <div class="product-description">
+                              <div class="product-description__item">
+                                   <img src="img/product/description.svg" alt="icon:description"
+                                        class="product-description__item-icon">
+                                   <a href="#" class="product-description__item-text">Описание товара</a>
+                              </div>
+                              <div class="product-description__item">
+                                   <img src="img/product/time.svg" alt="icon:time"
+                                        class="product-description__item-icon">
+                                   <a href="#" class="product-description__item-text">Доставка и возврат</a>
+                              </div>
+                              <div class="product-description__item">
+                                   <img src="img/product/card.svg" alt="icon:card"
+                                        class="product-description__item-icon">
+                                   <a href="#" class="product-description__item-text">Способы оплаты</a>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
 
 
 
@@ -81,12 +162,9 @@
      <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
      <script src="js/modal-validate.js"></script>
      <script src="js/jquery.mask.min.js"></script>
-     <script src="js/category-slider.js"></script>
-     <script src="js/unreleased-slider.js"></script>
      <script src="js/modal.js"></script>
-     <script src="js/menu.js"></script>
+     <script src="js/basket.js"></script>
      <script src="js/like.js"></script>
-     <script src="js/jquery.fancybox.min.js"></script>
      <script src="js/jquery.validate.min.js"></script>
 
 </body>
